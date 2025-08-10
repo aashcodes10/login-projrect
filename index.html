@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page| login to your account</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilityclass.css" />
+  </head>
+
+  <body>
+    <canvas id="stars"></canvas>
+    <main class="container items-center justify-center">
+      <!-- sign up form  -->
+      <section class="logbox flex flex-col justify-center items-center g-10 signup">
+        <header class="flex flex-col header">
+          <h1>Welcome To Coding World</h1>
+          <p>Create your account</p>
+        </header>
+        <form action="" class="flex flex-col items-center">
+          <span class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1}"
+              stroke="purple"
+              className="size-3"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter username"
+          /></span>
+          <span class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="purple"
+              class="size-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+          /></span>
+          <span class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="purple"
+              class="size-6 pass"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Enter password"
+          /></span>
+          <span class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="purple"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+            <input
+              type="text"
+              name="cpassword"
+              id="ConfirmPassword"
+              placeholder="Confirm password"
+          /></span>
+          <div class="strength flex">
+            <span> </span> <span> </span> <span> </span>
+          </div>
+          <p class="strengthtxt">
+
+          </p>
+          <button class="btn" disabled><a href="" class="link"> Sign Up </a></button>
+        </form>
+        <div class="low-part flex items-center flex-col">
+          <p  class="logtxt">Already have an account <span>Log in </span> </p>
+          <p>or Sign up with</p>
+          <div class="logimgs flex g-10">
+            <span
+              title="Login with Google"
+              class="flex items-center justify-center"
+            >
+              <img src="res/google.png" alt="google" />
+            </span>
+            <span
+              title="Login with Facebook"
+              class="flex items-center justify-center"
+            >
+              <img src="res/facebook.png" alt="google" />
+            </span>
+            <span title="Login with X" class="flex items-center justify-center">
+              <img src="res/x.png" alt="google" />
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- login form  -->
+    <section class="logbox flex flex-col items-center g-10 signin">
+        <header class="flex flex-col header">
+          <h1>Welcome To Coding World</h1>
+          <p>Sign in to your account</p>
+        </header>
+        <form action="" class="flex flex-col items-center">
+          <span class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="purple"
+              class="size-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            <input
+              type="text"
+              name="email"
+              id="logemail"
+              placeholder="Enter email"
+          /></span>
+          <span class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="purple"
+              class="size-6 pass"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+            <input
+              type="text"
+              name="password"
+              id="logpassword"
+              placeholder="Enter password"
+          /></span>
+          <div class="flex Remember items-center">
+            <span class="flex items-center">
+              <input type="checkbox" name="checkbox" id="">
+              Remember me
+            </span>
+            <a href="forgotPassword.html">Forgot password</a>
+          </div>
+                <p class="strengthtxt">
+          </p>
+          <button class="btn" disabled><a class="link" >Log in</a></button>
+        </form>
+        <div class="low-part flex items-center flex-col">
+                    <p  class="logtxt">Don't have an account <span>Sign up </span> </p>
+
+          <p>or Log in with</p>
+          <div class="logimgs flex g-10">
+            <span
+              title="Login with Google"
+              class="flex items-center justify-center"
+            >
+              <img src="res/google.png" alt="google" />
+            </span>
+            <span
+              title="Login with Facebook"
+              class="flex items-center justify-center"
+            >
+              <img src="res/facebook.png" alt="google" />
+            </span>
+            <span title="Login with X" class="flex items-center justify-center">
+              <img src="res/x.png" alt="google" />
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

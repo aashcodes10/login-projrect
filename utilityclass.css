@@ -1,0 +1,19 @@
+
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.g-10{
+    gap: 16px;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.rounded{
+    border-radius: 50%;
+}

@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    rgb(77, 11, 121),
+    rgb(89, 87, 172),
+    rgb(110, 89, 109)
+  );
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  box-sizing: border-box;
+}
+section {
+  z-index: 100;
+}
+.logbox {
+  width: 40vw;
+  min-width: 34vw;
+  max-height: 82vh;
+  background-color: white;
+  border-radius: 16px;
+  color: rgb(3, 4, 15);
+  box-shadow: inset 4px 6px 8px rgb(204, 200, 245),
+    inset -5px -6px 10px rgb(238, 204, 233);
+  display: flex;
+  padding: 6vh 2vw;
+  flex-direction: column;
+  position: absolute;
+  transition: all 0.3s ;
+}
+header {
+  text-align: center;
+  width: 100%;
+}
+header p {
+  padding-top: 5px;
+  font: 0.9rem;
+}
+h1 {
+  font-size: 1.6rem;
+  font: bold;
+  /* text-align: left; */
+}
+form {
+  gap: 12px;
+  /* border: 2px solid red; */
+  width: 76%;
+  max-width: 100%;
+  padding: 7px 14px;
+}
+form > span {
+  background-color: rgba(235, 224, 236, 0.61);
+  border-radius: 16px;
+  width: 100%;
+  gap: 4px;
+  padding: 9px 10px;
+  box-shadow: inset 2px 3px 12px rgb(182, 178, 178);
+}
+svg {
+  width: 26px;
+  height: 26px;
+}
+form input {
+  border: none;
+  padding: 6px 10px;
+  width: 90%;
+  outline: none;
+  background: transparent;
+}
+button {
+  border: none;
+  width: 100%;
+  border-radius: 24px;
+  padding: 12px 6px;
+  box-shadow: inset 10px 10px 20px rgb(128, 128, 128),
+    inset -7px -5px 20px rgb(127, 125, 250), 5px 5px 10px rgb(92, 91, 91);
+  background: blueviolet;
+  font: 800;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
+button:hover {
+  background: rgb(83, 83, 248);
+  transform: scale(1.011);
+  border: 1px solid grey;
+  transition: all 0.2;
+}
+button:disabled {
+  opacity: 40%;
+  background-color: gray;
+  cursor: none;
+}
+
+.low-part {
+  width: 100%;
+  gap: 6px;
+}
+.logimgs span {
+  padding: 8px;
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: inset 3px 3px 8px rgb(216, 179, 210),
+    inset -3px -4px 8px rgb(192, 190, 191);
+}
+.logimgs span img {
+  width: 18px;
+  height: 18px;
+}
+.logimgs span:hover {
+  transform: scale(1.11);
+}
+#stars {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.strrength span {
+  background-color: purple;
+}
+.strength {
+  width: 100%;
+  gap: 3px;
+  justify-content: space-evenly;
+}
+.strength span {
+  border: 1px solid purple;
+  height: 4px;
+  width: 30%;
+  border-radius: 25px;
+}
+.strengthtxt {
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.Remember {
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.Remember span{
+  font-size: 0.6rem;
+  gap: 4px;
+}
+.Remember input{
+  width: 16px;
+  height: 16px;
+
+}
+.Remember a{
+  color:purple;
+}
+p{
+  font-size: 0.8rem;
+  padding-bottom: 3px;
+}
+p span{
+  font-size: 1rem;
+  color: purple;
+  text-decoration: underline;
+}
+.logtxt{
+  cursor:pointer;
+}
+.signup{
+visibility: visible;
+z-index: 300;
+}
+.signin{
+  visibility: hidden;
+}
+@keyframes inAnimation {
+  0%{
+    transform: translateX(-100vw);
+  }
+  100%{
+    transform: translateX(0vw);
+
+  }
+}
+@keyframes outAnimation {
+  to{
+    transform: translateX(100vw);
+  }
+
+}
+
+/* tablet form  */
+@media (max-width: 1024px) {
+  .container {
+    /* width: 50vw; */
+    height: auto;
+    min-height: 100vh;
+  }
+  .logbox {
+    width: 60%;
+    height: fit-content;
+    margin-top: 6%;
+    order: 1;
+    padding: 30px 10px;
+    border: none;
+    align-self: stretch;
+    justify-self: center;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+    .container {
+    /* width: 80vw; */
+    height: auto;
+    min-height: 100vh;
+  }
+  .logbox {
+height:fit-content;
+width:80%;
+    border-radius: 16px;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px 4px;
+  }
+
+  .logimgs span img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .logbox {
+height:fit-content;
+width:90%;
+  padding: 30px 6px;
+    border-radius: 6px;
+  }
+form{
+  width:85%;
+}
+}
