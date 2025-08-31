@@ -108,15 +108,15 @@ function validateSignupForm() {
 
   if (!allFilled) {
     strengthtxt.textContent = "Please fill all the fields";
-    document.querySelector(".signup .btn").disabled = true;
+    // document.querySelector(".signup .btn").disabled = true;
     document.querySelector(".signup .link").href = "#";
   } else if (password.value === cpassword.value) {
-    document.querySelector(".signup .btn").disabled = false;
+    // document.querySelector(".signup .btn").disabled = false;
     document.querySelector(".signup .link").href = "home.html";
     strengthtxt.textContent = "Ready to sign up";
   } else {
     strengthtxt.textContent = "Passwords do not match";
-    document.querySelector(".signup .btn").disabled = true;
+    // document.querySelector(".signup .btn").disabled = true;
     document.querySelector(".signup .link").href = "#";
   }
 }
@@ -127,19 +127,19 @@ input.forEach(inp => {
 });
 
 function validateSigninForm() {
-  let allFilled = true;
+  let singFilled = true;
   loginput.forEach(inp => {
     if (inp.value.trim() === "") {
-      allFilled = false;
+      singFilled = false;
     }
   });
 let strengthtxt1 = document.querySelector('.signin .strengthtxt')
-  if (!allFilled) {
+  if (!singFilled) {
     strengthtxt1.textContent = "Please fill all the fields";
-    document.querySelector(".signin .btn").disabled = true;
+    // document.querySelector(".signin .btn").disabled = true;
     document.querySelector(".signin .link").href = "#";
   } else  {
-    document.querySelector(".signin .btn").disabled = false;
+    // document.querySelector(".signin .btn").disabled = false;
     document.querySelector(".signin .link").href = "home.html";
     strengthtxt1.textContent = "Ready to login";
   }

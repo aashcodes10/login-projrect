@@ -77,7 +77,7 @@ form input {
   outline: none;
   background: transparent;
 }
-button {
+.btn {
   border: none;
   width: 100%;
   border-radius: 24px;
@@ -89,22 +89,23 @@ button {
   font-size: 1.2rem;
   letter-spacing: 2px;
   cursor: pointer;
+  text-align: center;
 }
-button a {
+ a {
   color: white;
   text-decoration: none;
 }
-button:hover {
+.btn:hover {
   background: rgb(83, 83, 248);
   transform: scale(1.011);
   border: 1px solid grey;
   transition: all 0.2;
 }
-button:disabled {
+/* .btn:disabled {
   opacity: 40%;
   background-color: gray;
   cursor: none;
-}
+} */
 
 .low-part {
   width: 100%;
